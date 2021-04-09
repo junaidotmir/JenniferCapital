@@ -99,6 +99,9 @@ ul li a:hover {
 }
 
 /*Image and Description*/
+.swiper-container {
+    width: min(98%,75rem);
+  }
 .container-wrapper {
     margin: 10px auto;
     width: min(98%,75rem);
@@ -224,6 +227,9 @@ div p{
     .burger {
         display: block;
     }
+    .swiper-container {
+        width: 100%;
+    }
     .container-wrapper {
         width: 100%;
         justify-content: space-between;
@@ -245,35 +251,7 @@ div p{
         top: 0px;
     }
 }
-.bottom-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 35px;
-    margin: 50px 0;
-}
-.arrow img {
-    width: 40px;
-    height: 30px;
-    color: var(--clr-secondary);
-}
-.arrow {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-.nav-indicator {
-    width: 10px;
-    height: 10px;
-    background-color: var(--clr-secondary);
-    border: none;
-    cursor: pointer;
-}
-.nav-indicator.current-slide {
-    width: 10px;
-    height: 10px;
-    background-color: var(--clr-secondary);
-    border: none;
-    outline: 1px solid var(--clr-secondary);
-    outline-offset: 2px;
+
+.swiper-pagination {
+    margin-left: 50%;
 }
